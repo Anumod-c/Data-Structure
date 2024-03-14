@@ -163,7 +163,7 @@ class BinarySearchtree{
         common(node1,node2){
             let path1=this.path(node1);
             let path2= this.path(node2);
-            if(!path1 || !path1){
+            if(!path1 || !path2){
                 return null;
             }
             let common=0;
