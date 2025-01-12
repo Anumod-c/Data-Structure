@@ -27,7 +27,7 @@ class Stack{
     }
     peek(){
         return this.top.value;
-    }
+    }s
     print(){
         let curr =this.top;
         while(curr){

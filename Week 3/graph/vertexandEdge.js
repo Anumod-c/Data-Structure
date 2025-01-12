@@ -33,7 +33,7 @@ removeEdge(vertex1,vertex2){
 }
 removeVertex(vertex){
     if(!this.adjacencyList[vertex]){
-        return
+        return 
     }
     for(let adjacentVertex of this.adjacencyList[vertex]){
         this.removeEdge(vertex,adjacentVertex)
@@ -63,15 +63,15 @@ const graph =new Graph()
 graph.addVertex('A')
 graph.addVertex('B')
 graph.addVertex('C')
-graph.addVertex('D')
-graph.addVertex('E')
-graph.addVertex('F')
+// graph.addVertex('D')
+// graph.addVertex('E')
+// graph.addVertex('F')
 
 graph.addEdge("A","B")
 graph.addEdge("A","C")
-graph.addEdge("B","D")
-graph.addEdge("B","E")
-graph.addEdge("C","F")
+graph.addEdge("B","C")
+// graph.addEdge("B","E")
+// graph.addEdge("C","F")
 
 graph.display()
 console.log(graph.hasEdge("B","A"));

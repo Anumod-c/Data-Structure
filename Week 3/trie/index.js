@@ -48,12 +48,11 @@ class trie{
             if(node.endNode){
                 word.push(currentWord)
             }
-            
             for (let char in node.children) {
                 displayHelper(node.children[char], currentWord + char);
             }
         }
-        displayHelper(this.root,'');
+       displayHelper(this.root,'');
         console.log(word);
     }
 }
@@ -70,6 +69,6 @@ t.insert("malavika");
 
 
 
-console.log(t.search("anumod"));
-console.log(t.prefix("anu"));
+console.log(t.search("anu"));
+console.log(t.prefix("anum"));
 t.display()

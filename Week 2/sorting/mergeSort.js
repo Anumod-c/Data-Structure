@@ -6,7 +6,6 @@ function mergeSort(arr){
     let left = arr.slice(0,middle);
     let right =  arr.slice(middle);
     return  merge(mergeSort(left),mergeSort(right));
-
 }
 
 
@@ -19,8 +18,6 @@ function merge(left,right){
         else{
             sortedArray.push(right.shift())
         }
-
-
     }
     return [...sortedArray,...left,...right]
 }
